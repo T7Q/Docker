@@ -1,0 +1,3 @@
+docker run -it --rm alpine
+
+# --rm		flag is used when you need the container to be deleted after the task for it is complete.

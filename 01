@@ -1,0 +1,20 @@
+docker-machine create --driver virtualbox Char
+
+# ------------------------------------------------------------------------------
+# Installing Homebrew on the school Mac's in order to install docker:
+#
+# rm -rf $HOME/.brew && git clone --depth=1 https://github.com/Homebrew/brew 
+# $HOME/.brew && echo 'export PATH=$HOME/.brew/bin:$PATH' >> $HOME/.zshrc && 
+# source $HOME/.zshrc && brew update
+# ------------------------------------------------------------------------------
+# Installing Docker:
+# brew install docker docker-machine
+# ------------------------------------------------------------------------------
+# Move Docker to goinfre:
+# mv .docker/ /goinfre/tkuumola
+# Create Soft Link:
+# ln -s /goinfre/tkuumola/.docker $HOME
+# ------------------------------------------------------------------------------
+# Explanation for the answer is found at the docker documentation:
+# https://docs.docker.com/machine/reference/create/
+# ------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+eval $(docker-machine env Char)
+
+# https://docs.docker.com/v17.09/machine/reference/env/

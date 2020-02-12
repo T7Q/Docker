@@ -1,0 +1,4 @@
+docker-machine ip Char
+
+# Get the IP address of the Char virtual machine.
+# https://docs.docker.com/machine/reference/ip/
