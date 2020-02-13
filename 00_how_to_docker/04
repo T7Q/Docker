@@ -1,0 +1,6 @@
+docker pull hello-world
+
+# ---------------------------------------------------------------
+# << dockere images >> to check if pull worked
+# https://docs.docker.com/engine/reference/commandline/pull/
+# ---------------------------------------------------------------

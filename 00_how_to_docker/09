@@ -2,7 +2,7 @@ apt-get update -y &&
 apt-get upgrade -y && 
 apt-get install build-essential git -y
 
- 
+# ---------------------------------------------------------------
 # build-essential package – Installs the following collection to compile c/c++ program on Debian/Ubuntu Linux
 #								libc6-dev – C standard library.
 #								gcc – C compiler.
@@ -16,3 +16,4 @@ apt-get install build-essential git -y
 #		apt-get install vim -y
 # 		create a file in vim, e.g. "hello world"
 $ if container is created and you want to access it docker exec -it CONTAINER_name bash
+# ---------------------------------------------------------------
