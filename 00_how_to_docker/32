@@ -1,0 +1,9 @@
+docker rm -f $(docker ps -a -q)
+
+# ------------------------------------------------------------------------------
+# docker rm --help
+# 					-f, --force — Force the removal of a running container (uses SIGKILL)
+# docker ps --help
+# 					-a		all, show all containers
+# 					-q		quiet, only display numeric IDs
+# ------------------------------------------------------------------------------
