@@ -1,5 +1,7 @@
 docker inspect -f '{{.Config.Env}}' spawning-pool
 
-# ---------------------------------------------------------------
-# docker exec spawning-pool env			* if container is running 
-# ---------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+# For running container, this command is also possible << docker exec spawning-pool env >>
+# ------------------------------------------------------------------------------

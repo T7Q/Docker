@@ -1,6 +1,7 @@
 docker service logs engineering-bay
 
 
+
 # -----------------------------------------------------------------------------
 # https://docs.docker.com/engine/reference/commandline/service_logs/
 # -----------------------------------------------------------------------------

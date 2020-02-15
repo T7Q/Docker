@@ -3,18 +3,15 @@ docker exec Abathur pip install Flask
 echo 'from flask import Flask\napp = Flask(__name__)\n@app.route("/")\ndef hello_world():\n\treturn "<h1>Hello World</h1>"' > ~/app.py
 docker exec -e FLASK_APP=/root/app.py Abathur flask run --host=0.0.0.0 --port 3000
 
-# ---------------------------------------------------------------
+# ------------------------------------------------------------------------------
 # -dit			* flags mean to start the container detached (in the background), interactive (with the ability to type into it), and with a TTY (so you can see the input and output).
 # Flask(web framework)	Flask provides you with tools, libraries, and technologies that allow you to build a web application.
 #						This web application can be some web pages, a blog, a wiki or go as big as a web-based calendar application or a commercial website.
 # 						Flask is part of the categories of the micro-framework. Micro-framework is normally a framework with little to no dependencies to external libraries.- https://flask.palletsprojects.com/en/1.0.x/quickstart/
 # docker exec   * Run a command in a running container https://docs.docker.com/engine/reference/commandline/exec/
-# pip			* Install and update Flask 
-# to check results 	curl $(docker-machine ip Char):3000 or http://192.168.99.100:3000/
-# To run the application you can either use the flask command or python’s -m switch with Flask.
-# Before you can do that you need to tell your terminal the application to work with by exporting the FLASK_APP environment variable:
-# export FLASK_APP=hello.py
-# flask run
-# Running on http://192.168.99.100:3000/
-# curl $(docker-machine ip Char):3000
-# ---------------------------------------------------------------
+# pip			* Install and update Flask
+# to check results
+#					<< curl $(docker-machine ip Char):3000 >>	in MAC terminal
+#					or
+#					http://192.168.99.100:3000/
+# ------------------------------------------------------------------------------

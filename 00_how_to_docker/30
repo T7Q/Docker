@@ -1,7 +1,11 @@
 docker service scale -d marines=20
 
+
+
 # -----------------------------------------------------------------------------
 # --detach , -d — Exit immediately instead of waiting for the service to converge
-# https://docs.docker.com/engine/swarm/swarm-tutorial/scale-service/
-# docker service logs marines
+# 				https://docs.docker.com/engine/swarm/swarm-tutorial/scale-service/
+#
+# to check
+# 			<< docker service logs marines >>
 # -----------------------------------------------------------------------------

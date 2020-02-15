@@ -1,6 +1,8 @@
 docker-machine create --driver virtualbox Aiur
 
 
+
 # -----------------------------------------------------------------------------
-# docker-machine ls			> to check if machine was created
+# to check
+# 			<< docker-machine ls >>			* to check if machine was created
 # -----------------------------------------------------------------------------

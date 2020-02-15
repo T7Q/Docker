@@ -3,9 +3,13 @@ docker swarm init --advertise-addr $(docker-machine ip Char)
 
 # -----------------------------------------------------------------------------
 # https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/
-# docker-machine ssh Char * to open and ssh into the machine to run your manager node
-# docker swarm init --advertise-addr $(docker-machine ip Char) * to create new swarm
-# docker info  * to check the state of the swarn in
-# docker node ls * to view info about nodes
-# exit		* to leave the environment 
+#
+# how to run 
+# 			<< docker-machine ssh Char >>	* to open and ssh into the machine to run your manager node
+# 			run command mentioned above		* to create new swarm
+#
+# to check
+# 			docker info  				* to check the state of the swarn in
+# 			docker node ls 				* to view info about nodes
+# 			exit						* to leave the environment 
 # -----------------------------------------------------------------------------

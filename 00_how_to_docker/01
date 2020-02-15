@@ -14,4 +14,8 @@ docker-machine create --driver virtualbox Char
 # 		ln -s /goinfre/tkuumola/.docker $HOME
 # 5. Explanation for the answer is found at the docker documentation:
 # 		https://docs.docker.com/machine/reference/create/
+#
+#
+# to check
+#			<< docker-machine ls >>
 # ------------------------------------------------------------------------------

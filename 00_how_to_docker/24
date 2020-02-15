@@ -1,9 +1,11 @@
 docker service create -d --network overmind --name orbital-command -e RABBITMQ_DEFAULT_USER=root -e RABBITMQ_DEFAULT_PASS=root rabbitmq
 
 
+
 # -----------------------------------------------------------------------------
-# https://docs.docker.com/engine/reference/commandline/service_create/
 # -d	* Exit immediately instead of waiting for the service to converge.
 # -e	* Set environment variables.
+#
+# https://docs.docker.com/engine/reference/commandline/service_create/
 # https://hub.docker.com/_/rabbitmq
 # -----------------------------------------------------------------------------

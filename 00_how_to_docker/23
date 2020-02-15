@@ -1,8 +1,12 @@
 docker network create -d overlay overmind
 
+
+
 # -----------------------------------------------------------------------------
 # The overlay network driver creates a distributed network among multiple Docker daemon hosts. 
 # https://docs.docker.com/network/overlay/
 # docker network create --help
-# docker network ls		# to check
+#
+# to check
+# 			<< docker network ls >>
 # -----------------------------------------------------------------------------
