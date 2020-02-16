@@ -8,6 +8,8 @@ CMD ["rails", "s", "-b", "0.0.0.0", "-p", "3000"]
 
 
 # ------------------------------------------------------------------------------
+# CMD is the command the container executes by default when you launch the built image. 
+#
 # How to build it:
 # 		<< docker build -t ex02 . >>
 #
