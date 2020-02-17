@@ -1,15 +1,18 @@
-eval $(docker-machine env Aiur)
-docker-machine ssh Aiur 
-docker swarm join --token SWMTKN-1-0osodcfj1zl2ip4zt2sphj4ja5pu3robp2qv25262ompanjfz5-7ow4lajysay03h4wgfig2ooax 192.168.99.100:2377
+docker-machine ssh Aiur "docker swarm join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377"
 
 
 
 # -----------------------------------------------------------------------------
-# how to run
+# how does it work
+#			or
+#			<< eval $(docker-machine env Aiur) >>
+# 			run command above 
+#			or
 # 			<< docker-machine ssh Char	>>	* login to Char
 # 			<< docker swarm join-token worker -q >> * to create a worker token number: SWMTKN-1-0osodcfj1zl2ip4zt2sphj4ja5pu3robp2qv25262ompanjfz5-7ow4lajysay03h4wgfig2ooax
 # 			<< exit	>>							* exit Char
-# 			run command above 
+#			<< docker-machine ssh Aiur >> 
+# 			use the tocken to make Aiur a worker docker swarm join --token SWMTKN-1-6d2xo2hagjhd0m3854s5coozuy6834i31kiyvvaap3sizyl3bh-0d5iwiqzurh1n7u7fm0kmrm8p 192.168.99.100:2377
 # to check 
 # 			<< docker node ls >>
 #			<< docker info >>

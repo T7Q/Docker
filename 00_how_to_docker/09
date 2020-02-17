@@ -13,9 +13,9 @@ apt-get install build-essential git -y
 #								dpkg-dev – Debian package development tools.
 #
 # to check
-# 			<< docker run -it debian >>		* create container in interactive mode
-#			or
-#			<< docker exec -it Container_Name bash >> * access existing container
+# 			<< docker run -it --rm debian >>		* create container in interactive mode
+#												or
+#												<< docker exec -it Container_Name bash >> * access existing container
 # 			run all commands specified above inside debian
 #			<< apt-get install vim -y >> 
 # 			create a file in vim, e.g. "hello world"
