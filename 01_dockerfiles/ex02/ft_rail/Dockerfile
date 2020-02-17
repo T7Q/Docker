@@ -1,7 +1,8 @@
 FROM ruby:2.5.1
 
-RUN apt-get update && apt-get install -y nodejs
-RUN gem install rails --version 5.2.0 && gem install bundler
+RUN apt-get update && apt-get -y upgrade && apt-get install -y nodejs
+#RUN gem install bundler:1.16.1
+RUN gem install rails --version 5.2.0
 RUN mkdir -p /opt/app
 
 COPY ./app /opt/app
